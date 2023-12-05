@@ -168,6 +168,13 @@ function nuevo() {
     window.location.href='producto_nuevo.html'
 }
 
+function checkEnter(event) {
+    if (event.key === "Enter") {
+        admin();
+    }
+}
+
+
 function admin () {
     pass = document.getElementById("pass").value;
     if (pass !== null) {
