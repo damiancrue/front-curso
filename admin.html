@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion del stock la tienda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <!-- Agrega la biblioteca ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+        
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Home</a>
+        <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+    </nav>
+    <div id="app" class="container">
+        
+        <div v-if="error">
+            <p>Lo sentimos , ........</p>
+        </div>
+        <div v-else>
+            <section v-if="cargando">
+                <div class="spinner-border"></div>
+                <p>Cargando .....</p>
+            </section>
+            <main class="ofertas">
+            <section v-else>
+                <div class="table-responsive">
+                <h1 id="titulo">Administracion de productos</h1>
+            <button onclick=nuevo()>Nuevo</button>
+            <table class="table table-bordered">
+            <thead>
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre     </th>
+            <th scope="col">Precio   </th>
+            <th scope="col">Stock   </th>
+            <th scope="col">Imagen   </th> 
+            <th scope="col">Descripcion   </th>
+            <th scope="col">Activo   </th>
+            <th scope="col">Acciones   </th>
+            
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="" v-for="producto in productos">
+            <td scope="row">{{producto.id}}</td>
+            <td>{{producto.nombre}}</td>
+            <td>{{producto.precio}}</td>
+            <td>{{producto.stock}}</td>
+            <td>
+            <img width="60" :src="producto.imagen" :alt="producto.nombre">
+            </td>
+            <td>{{producto.descripcion}}</td>
+            <td>{{producto.activo}}</td>
+            <td>
+            <a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
+            <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            </div>
+            </div>
+            </main>
+      </footer>
+      <script
+     
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+      <script src="./js/main.js"></script>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+      <script src="./js/script.js"></script>
+      <script src="./js/productos.js"></script>
+      
+</body>
+</html>

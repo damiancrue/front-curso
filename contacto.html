@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanLow Store - Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <!-- Agrega la biblioteca ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+        
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Home</a>
+        <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+    </nav>
+    <section class="contenedor comprar">
+        <h1 id="titulo">Seguinos en Redes Sociales</h1>
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_4.png" alt="camiseta Facebook">
+                <h3 class="bloque__titulo">Facebook</h3>
+                
+            </div> <!--.bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_3.png" alt="Camiseta Instagram">
+                <h3 class="bloque__titulo">Instagram</h3>
+                
+            </div> <!--.bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_2.png" alt="Camiseta Twiiter">
+                <h3 class="bloque__titulo">Twiiter </h3>
+                
+            </div> <!--.bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_1.png" alt="Camiseta Linkedin">
+                <h3 class="bloque__titulo">LINKEDIN</h3>
+            </div> <!--.bloque-->
+        </div><!--.bloques-->
+    </section> 
+    <div class="contact-container">
+        <div class="contenedor-mapa">
+            <h2>Donde estamos ubicados.</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.75955271677!2d-58.5981081473618!3d-34.61571293339003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1695402357283!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="contact-form">  
+            
+            <h3>¿Como podemos ayudarte?</h3>
+                
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" value="">
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" value="">
+        
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" value="">
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" value="" rows="4"></textarea>
+        
+                <button type="button" onclick="validarFormulario()">Enviar Mensaje</button>
+            </form> 
+            <div id="errorMessages" class="error-message"></div>
+    </div>
+    <footer>
+        <div class="footer-grid">
+            <!-- Columna 1 - Nuestra Información -->
+            <div class="footer-column">
+                <h3>Nuestra Información</h3>
+                <br>
+                <br>
+                <p>Dirección: Calle 123, Ciudad</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: info@example.com</p>
+            </div>
+      
+            <!-- Columna 2 - Links de Interés -->
+            <div class="footer-column">
+                <h3>Links de Interés</h3>
+                <br>
+                <br>
+                <a class="footer-link" href="#">Términos y Condiciones</a>
+                <a class="footer-link" href="#">Política de Privacidad</a>
+                <a class="footer-link" href="#">Preguntas Frecuentes</a>
+            </div>
+      
+            <!-- Columna 3 - Redes Sociales -->
+            <div class="footer-column">
+                <h3>Redes Sociales</h3>
+                <br>
+                <br>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+      
+            <!-- Columna 4 - Suscribirse a Nuestro Newsletter -->
+            <div class="footer-column">
+              <div class="newsletter-container">
+                  <h3>Recibe nuestras ofertas</h3>
+                  <form class="subscribe-form" action="#">
+                      <input type="email" placeholder="Ingrese su correo electrónico">
+                      <button type="submit">Suscribirse</button>
+                  </form>
+              </div>
+        </div>
+        <div class="mediospago">
+          <img src="img/1.webp" alt="">
+        </div>
+      </footer>
+      <script src="js/script.js"></script>
+</body>
+</html>

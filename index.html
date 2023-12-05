@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanLow Store - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href=" css/style.css">
+   
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html">
+        <img class="header__logo" src="img/logo.png" alt="Logotipo">
+    </a>
+
+    
+</header>
+<nav class="navegacion">
+    <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Home</a>
+    <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+    <a class="navegacion__enlace" href="puente.html">Admin</a>
+</nav>
+
+  
+
+
+
+<!--/porque elegirnos-->
+<!-- <div class="hero-section">
+    <div class="hero-text">
+        Tu texto aquí
+    </div>
+    
+    <img src="img/carrousel/hsl02.webp" alt="Imagen 1" class="hero-image" style="left: 10%; ">
+    <img src="img/carrousel/hsl02.webp" alt="Imagen 2" class="hero-image" style="left: 0%; top: 15%; ">
+    <img src="img/carrousel/hsl02.webp" alt="Imagen 3" class="hero-image" style="left: 80%; top: 15%; ">
+    <img src="img/carrousel/hsl02.webp" alt="Imagen 4" class="hero-image" style="left: 70%; ">
+</div>
+ -->
+ <!-- Carrousell -->
+ 
+ 
+ <div class="gallery">
+     <div class="gallery__inner container">
+       <div class="gallery__item">
+         <h3 class="gallery__title">Pantalones</h3>
+       </div>
+       <div class="gallery__item">
+         <h3 class="gallery__title">Zapatillas</h3>
+       </div>
+       <div class="gallery__item --active">
+         <h3 class="gallery__title">Camperas</h3>
+       </div>
+       <div class="gallery__item">
+         <h3 class="gallery__title">Remeras</h3>
+       </div>
+       <div class="gallery__item">
+         <h3 class="gallery__title">Buzos</h3>
+       </div>
+     </div>
+ </div>
+ 
+ <!-- Slider de imágenes para dispositivos móviles -->
+<div class="slider-mobile">
+    <div><img src="img/Slider/5.jpg" alt="Pantalones"></div>
+    <div><img src="img/Slider/2.jpg" alt="Zapatillas"></div>
+    <div><img src="img/Slider/3.jpg" alt="Camperas"></div>
+    <div><img src="img/Slider/4.jpg" alt="Remeras"></div>
+    <div><img src="img/Slider/1.jpg" alt="Buzos"></div>
+  </div>
+
+<!--Ofertas-->
+
+<section class="ofertas">
+    <div class="carousel-container">
+        <h1>PRODUCTOS DESTACADOS</h1>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="carousel">
+            <div class="image-container">
+                <img src="img/carrousel/remera.png" alt="Producto 1">
+                <div class="overlay">
+                    <p class="overlay-text">$25</p>
+                    <br>
+                    <button class="overlay-button">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="img/carrousel/9999.png" alt="Producto 2">
+                <div class="overlay">
+                    <p class="overlay-text">$25</p>
+                    <br>
+                    <button class="overlay-button">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="img/carrousel/zapa.png" alt="Producto 3">
+                <div class="overlay">
+                    <p class="overlay-text">$25</p>
+                    <br>
+                    <button class="overlay-button">COMPRAR</button>
+                </div>
+            </div>
+
+            <!-- Agrega más imágenes dentro de .carousel según sea necesario -->
+        </div>
+    </div>
+
+    <button id="prevBtn" class="carousel-button prev-button"><<</button>
+    <button id="nextBtn" class="carousel-button next-button">>></button>
+</section>
+<br>
+
+<!--/carrousel-->
+  <!--pagos y promos-->
+<div class = "pagoseguro">
+    <div class="garantias">
+        <div class="garantia">
+            <i class="fas fa-truck fa-4x"></i>
+            <h2 class="titulo-rojo">Envío Gratis</h2>
+            <p class="descripcion-negra">Envío rápido y sin costo en todos los productos de nuestra tienda.</p>
+        </div>
+        <div class="garantia">
+            <i class="fas fa-shield-alt fa-4x"></i>
+            <h2 class="titulo-rojo">Pago Seguro</h2>
+            <p class="descripcion-negra">Garantizamos un proceso de pago seguro y protegido para tus compras en línea.</p>
+        </div>
+        <div class="garantia">
+            <i class="fas fa-credit-card fa-4x"></i>
+            <h2 class="titulo-rojo">Cuotas Sin Interés</h2>
+            <p class="descripcion-negra">Paga en cómodas cuotas mensuales sin intereses en todas tus compras.</p>
+        <br><br><br>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div id="llamado-accion">
+    <h1>¡Aprovecha esta oferta especial!</h1>
+    <p>Obtené 10% de descuento en mi priera compra</p>
+    <br>
+    <button >COMPRAR AHORA</button>
+</div>
+<br>
+
+<footer>
+  <div class="footer-grid">
+      <!-- Columna 1 - Nuestra Información -->
+      <div class="footer-column">
+          <h3>Nuestra Información</h3>
+          <br>
+          <br>
+          <p>Dirección: Calle 123, Ciudad</p>
+          <p>Teléfono: (123) 456-7890</p>
+          <p>Email: info@example.com</p>
+      </div>
+
+      <!-- Columna 2 - Links de Interés -->
+      <div class="footer-column">
+          <h3>Links de Interés</h3>
+          <br>
+          <br>
+          <a class="footer-link" href="#">Términos y Condiciones</a>
+          <a class="footer-link" href="#">Política de Privacidad</a>
+          <a class="footer-link" href="#">Preguntas Frecuentes</a>
+      </div>
+
+      <!-- Columna 3 - Redes Sociales -->
+      <div class="footer-column">
+          <h3>Redes Sociales</h3>
+          <br>
+          <br>
+          <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </div>
+
+      <!-- Columna 4 - Suscribirse a Nuestro Newsletter -->
+      <div class="footer-column">
+        <div class="newsletter-container">
+            <h3>Recibe nuestras ofertas</h3>
+            <form class="subscribe-form" action="#">
+                <input type="email" placeholder="Ingrese su correo electrónico">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+  </div>
+  <div class="mediospago">
+    <img src="img/1.webp" alt="">
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+   
+
+</body>
+</html>
