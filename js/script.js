@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             productDiv.innerHTML = `
             <div style="${product.stock < 1 ? 'filter: grayscale(100%)' : ''}">
             <img src="${product.imagen}" alt="${product.nombre}" class="product-image">
-            <h2 class="${product.stock < 1 ? 'product-description':'product-title'}">${product.nombre}</h2>
+            <h2 class="${product.stock < 1 ? 'navegacion__enlace--activo':'navegacion__enlace'}">${product.nombre}</h2>
             <p class="product-description">${product.descripcion}</p>
             <p class="product-price">Price: $${product.precio}</p>
             </div>
