@@ -270,12 +270,16 @@ document.addEventListener("DOMContentLoaded", async () => {
             const productDiv = document.createElement('div');
             productDiv.className = 'product';
             productDiv.innerHTML = `
-                <img src="${product.imagen}" alt="${product.nombre}" class="product-image">
-                <h2 class="product-title">${product.nombre}</h2>
-                <p class="product-description">${product.descripcion}</p>
-                <p class="product-price">Price: $${product.precio}</p>
-                <p class="product-description">${product.stock > 0?'EN STOCK':'SIN STOCK'}</p>
-            `;
+            <div style="${product.stock < 1 ? 'filter: grayscale(100%)' : ''}">
+            <img src="${product.imagen}" alt="${product.nombre}" class="product-image">
+            <h2 class="product-title">${product.nombre}</h2>
+            </div>
+            <p class="product-description">${product.descripcion}</p>
+            <p class="product-price">Price: $${product.precio}</p>
+            <p class="product-descript" style="${product.stock < 1 ? 'color: red;' : ''}">
+                ${product.stock > 0 ? 'EN STOCK' : 'SIN STOCK'}
+            </p>
+    `;
             productList.appendChild(productDiv);
         });
     } catch (error) {
