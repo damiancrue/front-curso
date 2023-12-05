@@ -1,29 +1,47 @@
-<<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
-<title>Producto Nuevo</title>
+<title>Editar Producto</title>
+<!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS v5.2.1 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="icon" type="image/vnd.icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href=" css/style.css">
 </head>
 <body>
-<header id="header">
-<!-- place navbar here -->
-</header>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+        
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Home</a>
+        <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+    </nav>
 <main>
-<div class="container" id="app">
-<form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-<h2>Editar Producto </h2>
-<p>Precio:{{precio}}</p>
+    <div class="carousel-container" id="app">
+<form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px; ">
+<h1>Editar Producto</h1>
 <div class="mb-3">
 <label for="id">Id</label>
 <input type="number" name="id" id="id" disabled v-model="id" >
 </div>
 <div class="mb-3">
 <label for="nombre">Nombre</label>
-<input type="text" name="nombre" id="nombre" v-model="nombre">
+<input type="text" name="nombre" id="nombre" v-model="nombre" >
 </div>
 <div class="mb-3">
 <label for="precio">Precio</label>
@@ -38,6 +56,10 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 <input type="text" name="imagen" id="imagen" v-model="imagen">
 <img width="100" :src="imagen" alt="">
 </div>
+<div class="mb-3">
+    <label for="imagen">Descripcion</label>
+    <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+    </div>
 <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
 </form>
 
@@ -47,14 +69,10 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 <!-- place footer here -->
 </footer>
 <!-- Bootstrap JavaScript Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-crossorigin="anonymous"> </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-crossorigin="anonymous"> </script>
-<script src="./js/main.js"></script>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+<script src="./js/script.js"></script>
+
 <script src="./js/producto_editar.js"></script>
 </body>
 </html>

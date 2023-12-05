@@ -10,7 +10,7 @@ nombre:"",
 imagen:"",
 stock:0,
 precio:0,
-url:'http://mcerda.pythonanywhere.com/productos/'+id,
+url:'https://damiancrue.pythonanywhere.com/productos/'+id,
 }
 },
 methods: {
@@ -25,6 +25,7 @@ this.nombre = data.nombre;
 this.imagen=data.imagen
 this.stock=data.stock
 this.precio=data.precio
+this.descripcion=data.descripcion
 })
 .catch(err => {
 console.error(err);
@@ -36,7 +37,8 @@ let producto = {
 nombre:this.nombre,
 precio: this.precio,
 stock: this.stock,
-imagen:this.imagen
+imagen:this.imagen,
+descripcion:this.descripcion
 }
 var options = {
 body: JSON.stringify(producto),
