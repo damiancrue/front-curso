@@ -65,8 +65,8 @@
             <img class="img-fluid" :src="producto.imagen" :alt="producto.nombre">
             </td>
             <td>{{producto.descripcion}}</td>
-            <td style="display: flex">
-                <a class="btn-primary" :href="'producto_update.html?id='+ producto.id">Edit</a>
+            <td style="display: flex; align-items:center">
+                <a class="btn-edit" :href="'producto_update.html?id='+ producto.id">Edit</a>
                 <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >X</button>
             </td>
             </tr>
