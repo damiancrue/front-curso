@@ -11,6 +11,7 @@ imagen:"",
 stock:0,
 precio:0,
 url:'https://damiancrue.pythonanywhere.com/productos/'+id,
+descripcion:""
 }
 },
 methods: {
@@ -49,7 +50,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro modificado")
-window.location.href = "./productos.html";
+window.location.href = "./admin.html";
 })
 .catch(err => {
 console.error(err);
