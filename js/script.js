@@ -248,7 +248,7 @@ function mostrarError(message) {
 // API REST
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const apiUrl = 'https://fakestoreapi.com/products';
+    const apiUrl = 'https://damiancrue.pythonanywhere.com/productos';
 
     const productList = document.getElementById('product-list');
 
@@ -263,10 +263,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             const productDiv = document.createElement('div');
             productDiv.className = 'product';
             productDiv.innerHTML = `
-                <img src="${product.image}" alt="${product.title}" class="product-image">
-                <h2 class="product-title">${product.title}</h2>
-                <p class="product-description">${product.description}</p>
-                <p class="product-price">Price: $${product.price}</p>
+                <img src="${product.imagen}" alt="${product.nombre}" class="product-image">
+                <h2 class="product-title">${product.nombre}</h2>
+                <p class="product-description">${product.descripcion}</p>
+                <p class="product-price">Price: $${product.precio}</p>
+                <p class="product-description">${product.stock > 0?'EN STOCK':'SIN STOCK'}</p>
             `;
             productList.appendChild(productDiv);
         });
