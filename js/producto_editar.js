@@ -11,7 +11,8 @@ imagen:"",
 stock:0,
 precio:0,
 url:'https://damiancrue.pythonanywhere.com/productos/'+id,
-descripcion:""
+descripcion:"",
+activo:""
 }
 },
 methods: {
@@ -27,6 +28,7 @@ this.imagen=data.imagen
 this.stock=data.stock
 this.precio=data.precio
 this.descripcion=data.descripcion
+this.activo=data.activo
 })
 .catch(err => {
 console.error(err);
@@ -39,7 +41,8 @@ nombre:this.nombre,
 precio: this.precio,
 stock: this.stock,
 imagen:this.imagen,
-descripcion:this.descripcion
+descripcion:this.descripcion,
+activo:this.activo
 }
 var options = {
 body: JSON.stringify(producto),
