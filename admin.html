@@ -36,11 +36,17 @@
                 <div class="spinner-border"></div>
                 <p>Cargando .....</p>
             </section>
-            <main class="ofertas">
+            <main class="administrador">
+               
             <section v-else>
                 <div class="table-responsive">
-                <h1 class="" id="titulo">Administracion de productos</h1>
-            <button onclick=nuevo()>Nuevo</button>
+                <h1 style="color: white;">Administracion de productos</h1>
+                <br>
+                <br>
+                <br>
+            <button onclick=nuevo()>Nuevo</button> <br>
+            <br>
+            <br>
             <table class="table table-bordered">
             <thead >
             <tr >
@@ -63,8 +69,8 @@
             <img height="100px auto" class="img-fluid" :src="producto.imagen" :alt="producto.nombre">
             </td>
             <td>{{producto.descripcion}}</td>
-            <td style="display: flex; align-items:center">
-                <a class="btn-edit" :href="'producto_update.html?id='+ producto.id" >Edit</a>
+            <td >
+                <a class="admin-button" :href="'producto_update.html?id='+ producto.id" >Edit</a>
                 <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >X</button>
             </td>
             </tr>
