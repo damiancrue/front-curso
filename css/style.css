@@ -112,6 +112,7 @@ h1 {
   border: none; /* Borde transparente inicial */
   /* animation: drawBorder 1s linear infinite alternate; Aplicar la animación de dibujo */
   /*border-image-width: 2px;  Grosor del borde */ 
+  text-align: center;
 }
 
 h2 {
@@ -1546,11 +1547,90 @@ input[type="submit"]:hover {
   background-color: var(--secundario);
   color: white;
   padding: 10px 20px;
-  border: none;
+  border: 2px solid red;
   cursor: pointer;
   border-radius: 4px;
 }
 
+.administrador {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color:#fafcff;
+  background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el contenedor */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Hace que el fondo sea fijo */
+  margin-top: 2px;
+}
 
+.administrador h1 {
+  font-size: 4rem;
+  color: var(--primarioOscuro);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3px 5px; /* Espacio alrededor del texto */
+  display: inline-block; /* Para que el fondo abarque solo el contenido del h1 */
+  border: none; /* Borde transparente inicial */
+  /* animation: drawBorder 1s linear infinite alternate; Aplicar la animación de dibujo */
+  /*border-image-width: 2px;  Grosor del borde */ 
+  text-align: center;
+}
+
+/* Estilos de la tabla */
+.table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ff0000; /* Bordes de la tabla en rojo */
+}
+
+/* Estilos de las celdas de la tabla */
+.table th,
+.table td {
+  width: 14.28%;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ff0000; /* Bordes de las celdas en rojo */
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos de las imágenes */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos de la sección de carga */
+.text-center {
+  text-align: center;
+}
+
+/* Estilos de la sección de administración */
+.administrador {
+  margin-top: 20px;
+  background-color: #0E243C;
+}
+
+/* Estilos de los botones de acción */
+.admin-button,
+.btn-danger {
+  margin: 0 auto;
+  display: block;
+  border:#fff 1px solid;
+}
+
+/* Espaciado entre los botones */
+.admin-button {
+  margin-bottom: 5px;
+}
 
 
