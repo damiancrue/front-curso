@@ -64,7 +64,7 @@
             </td>
             <td>{{producto.descripcion}}</td>
             <td style="display: flex; align-items:center">
-                <a class="btn-edit" :href="'producto_update.html?id='+ producto.id" >Edit</a>
+                <a class="admin-button" :href="'producto_update.html?id='+ producto.id" >Edit</a>
                 <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >X</button>
             </td>
             </tr>
