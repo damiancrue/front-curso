@@ -121,7 +121,8 @@ nombre:this.nombre,
 precio: this.precio,
 stock: this.stock,
 imagen:this.imagen,
-descripcion:this.descripcion
+descripcion:this.descripcion,
+activo:1
 }
 var options = {
 body:JSON.stringify(producto),
